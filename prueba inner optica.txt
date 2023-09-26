@@ -1,0 +1,1 @@
+db.proveedor.aggregate([{$match:{proveedor:"MaxLoops"}},{$lookup:{from:"gafas",localField:"proveedor",foreignField:"proveedor",as:"suministro"}}])

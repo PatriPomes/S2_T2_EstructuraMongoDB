@@ -1,0 +1,233 @@
+{
+    "Optica": {
+
+        "clientes": [
+        {
+            "_id": {
+            "$oid": "650af438f89bbe512d6e6f13"
+            },
+            "nombre": "Lucas",
+            "telefono": 663259814,
+            "mail": "gracioso@gmail.com",
+            "fecha_registro": {
+            "$date": "2020-02-19T23:00:00.000Z"
+            },
+            "recomendacion": "",
+            "codigo_postal": 8620
+        },
+        {
+            "_id": {
+            "$oid": "650af81cf89bbe512d6e6f16"
+            },
+            "nombre": "Marta",
+            "codigo_postal": 12004,
+            "telefono": 625147236,
+            "mail": "hola@hotmail.com",
+            "fecha_registro": {
+            "$date": "2023-03-15T00:00:00.000Z"
+            },
+            "recomendacion": "Lucas"
+        },
+        {
+            "_id": {
+            "$oid": "650af915f89bbe512d6e6f18"
+            },
+            "nombre": "Carlos",
+            "codigo_postal": 8536,
+            "telefono": 695178963,
+            "mail": "carlota@yahoo.es",
+            "fecha_registro": {
+            "$date": "2021-12-23T00:00:00.000Z"
+            },
+            "recomendacion": "Lucas"
+        },
+        {
+            "_id": {
+            "$oid": "650afb15f89bbe512d6e6f1a"
+            },
+            "nombre": "Pakita",
+            "codigo_postal": 8412,
+            "telefono": 632145987,
+            "mail": "pakitasala@hotmail.com",
+            "fecha_registro": {
+            "$date": "2019-12-15T00:00:00.000Z"
+            },
+            "recomendacion": "Marta"
+        }
+        ],
+        "empleados": [
+            {
+            "_id": {
+              "$oid": "650f1ee78c6f3ceedd979e69"
+            },
+            "empleado": "Judith"
+          },
+          {
+            "_id": {
+              "$oid": "650f1f0f8c6f3ceedd979e6a"
+            },
+            "empleado": "Ainhoa"
+          },
+          {
+            "_id": {
+              "$oid": "650f1f288c6f3ceedd979e6b"
+            },
+            "empleado": "Casimiro"
+          },
+          {
+            "_id": {
+              "$oid": "650f1f3b8c6f3ceedd979e6c"
+            },
+            "empleado": "Felipe"
+          }
+        ],
+         "gafas":[
+            {
+            "_id": {
+              "$oid": "650d724c0adc325de3dce796"
+            },
+            "marca": "Gavana",
+            "grad_derch": 0,
+            "grad_izq": 0,
+            "montura": "metalica",
+            "color_montura": "dorado",
+            "color_cris_derch": "polarizado",
+            "precio": 100,
+            "proveedor": "MaxLoops",
+            "color_cris_izq": "polarizado"
+          },
+          {
+            "_id": {
+              "$oid": "650f161c8c6f3ceedd979e5f"
+            },
+            "marca": "Dior",
+            "grad_derch": 1,
+            "grad_izq": 1,
+            "montura": "metalica",
+            "color_montura": "azul",
+            "color_cris_derch": "negro",
+            "color_cris_izq": "negro",
+            "precio": 52.3,
+            "proveedor": "MaxLoops"
+          },
+          {
+            "_id": {
+              "$oid": "650f16d28c6f3ceedd979e60"
+            },
+            "marca": "Asmin",
+            "grad_derch": 0.25,
+            "grad_izq": 0.12,
+            "montura": "pasta",
+            "color_montura": "negro",
+            "color_cris_derch": "blanco",
+            "color_cris_izq": "blanco",
+            "precio": 14.25,
+            "proveedor": "Nike"
+          },
+          {
+            "_id": {
+              "$oid": "650f17588c6f3ceedd979e61"
+            },
+            "marca": "XinXin",
+            "grad_derch": 0.5,
+            "grad_izq": 0.5,
+            "montura": "flotante",
+            "color_montura": "roja",
+            "color_cris_derch": "trasnparente",
+            "color_cris_izq": "transparente",
+            "precio": 23.66,
+            "proveedor": "RayBan"
+          }
+        ],
+        "proveedores":[
+            {
+            "_id": {
+              "$oid": "650d4eac0adc325de3dce791"
+            },
+            "proveedor": "MaxLoops",
+            "direccion": {
+              "calle": "Buenavista 12",
+              "codigo_postal": 5623,
+              "ciudad": "Mostoles",
+              "pais": "Espanya"
+            },
+            "telefono": 91236589,
+            "fax": 91236478,
+            "nif": "P25963741"
+          },
+          {
+            "_id": {
+              "$oid": "650d50e80adc325de3dce792"
+            },
+            "proveedor": "RayBan",
+            "direccion": {
+              "calle": "Poligono Cipreses 65",
+              "codigo_postal": 14893,
+              "ciudad": "Paris",
+              "pais": "Francia"
+            },
+            "telefono": {
+              "$numberLong": "5236145799"
+            },
+            "fax": 5557913,
+            "nif": "GV5225251"
+          },
+          {
+            "_id": {
+              "$oid": "650d52260adc325de3dce793"
+            },
+            "proveedor": "Mirabien",
+            "direccion": {
+              "calle": "Mayor 147",
+              "codigo_postal": 53683,
+              "ciudad": "Nueva York",
+              "pais": "EEUU"
+            },
+            "telefono": 555863159,
+            "fax": 888963251,
+            "nif": "T632503105K1"
+          },
+          {
+            "_id": {
+              "$oid": "650d52ec0adc325de3dce794"
+            },
+            "proveedor": "Nike",
+            "direccion": {
+              "calle": "Pluton 52",
+              "codigo_postal": 8221,
+              "ciudad": "Barcelona",
+              "pais": "Espanya"
+            },
+            "telefono": {
+              "$numberLong": "9348526259"
+            },
+            "fax": 932154880,
+            "nif": "G626821271"
+          }],
+         "ventas": [{
+            "_id": {
+              "$oid": "650f1c858c6f3ceedd979e67"
+            },
+            "empleado": "Ainhoa",
+            "marca": "Asmin",
+            "cantidad": 1,
+            "Cliente": "Lucas",
+            "fecha": {
+              "$date": "2021-05-05T00:00:00.000Z"
+            }
+          },
+          {
+            "_id": {
+              "$oid": "650f1db58c6f3ceedd979e68"
+            },
+            "empleado": "Judith",
+            "marca": "XinXin",
+            "cantidad": 3,
+            "Cliente": "Carlos",
+            "fecha": {
+              "$date": "2022-08-11T00:00:00.000Z"
+            }
+          }]
+    }
+}
+
