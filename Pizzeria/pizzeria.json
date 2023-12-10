@@ -14,30 +14,43 @@
       ],
   
       "pedido": [ 
-        {"idcomanda": 1, "inici_comanda": "2023-06-12 14:00:00.000000", "tipo": "tienda", "productos":[{"nombre":"agua", "cantidad":5}, {"nombre":"barbacoa", "cantidad":2},{"nombre":"funghi", "cantidad":3}] , "precio_total": 35.5 , "cliente.telefono": 652982555, "idtienda": 1},
-        {"idcomanda": 2, "inici_comanda": "2023-08-07 20:00:00.000000", "tipo": "domicilio", "entrega":{"data_entrega": "2023-05-06 20:00:00.000000", "idempleados": 7}, "productos":[{"nombre":"fanta", "cantidad":1}, {"nombre":"burguer", "cantidad":1}], "precio_total": 6, "cliente.telefono":644859632 , "idtienda": 3},
-        {"idcomanda": 3, "inici_comanda": "2023-10-12 21:00:00.000000", "tipo": "domicilio", "entrega":{ "data_entrega": "2023-09-02 21:00:00.000000", "idempleados": 10} , "productos":[{"nombre":"margarita", "cantidad":3}], "precio_total": 15, "cliente.telefono": 66652000, "idtienda": 5}
+        {"idcomanda": 1, "inici_comanda": "2023-06-12 14:00", "tipo": "tienda", "productos_comanda":[{"id_producto":1, "cantidad":5}, {"id_producto":5, "cantidad":2},{"id_producto":7, "cantidad":3}] , "precio_total": 35.5 , "cliente.telefono": 652982555, "idtienda": 1},
+        {"idcomanda": 2, "inici_comanda": "2023-08-07 20:00", "tipo": "domicilio", "productos_comanda":[{"id_producto":2, "cantidad":1}, {"id_producto":4, "cantidad":1}], "precio_total": 6, "cliente.telefono":644859632 , "idtienda": 3, "entrega":{"data_entrega": "2023-05-06 20:00:00.000000", "idempleados": 7}},
+        {"idcomanda": 3, "inici_comanda": "2023-10-12 21:00", "tipo": "domicilio", "productos_comada":[{"id_producto":8, "cantidad":3}], "precio_total": 21, "cliente.telefono": 66652000, "idtienda": 5, "entrega":{ "data_entrega": "2023-09-02 21:00:00.000000", "idempleados": 10}}
       ],
   
       "productos": [
-        { "tipo": "bebida", "nombre": "agua", "descripcion": null, "imagen": null, "precio": 1.5},
-        { "tipo": "bebida", "nombre": "fanta", "descripcion": null, "imagen": null, "precio": 2.5},
-        { "tipo": "burguer", "nombre": "completa", "descripcion": null, "imagen": null, "precio": 4.5},
-        {"tipo": "burguer", "nombre": "normal", "descripcion": null, "imagen": null, "precio": 3.5},
-        { "tipo": "pizza", "nombre": "barbacoa", "categoria": "mediana","descripcion": null, "imagen": null, "precio": 6.5},
-        { "tipo": "pizza", "nombre": "romana", "categoria": "premium","descripcion": null, "imagen": null, "precio": 7},
-        { "tipo": "pizza", "nombre": "funghi", "categoria": "premium","descripcion": null, "imagen": null, "precio": 7},
-        { "tipo": "pizza", "nombre": "caprichiosa", "categoria": "premium","descripcion": null, "imagen": null, "precio": 7},
-        { "tipo": "pizza", "nombre": "serrana", "categoria": "mediana","descripcion": null, "imagen": null, "precio": 6.5}
+        { "id_producto":1,"tipo": "bebida", "nombre": "agua", "descripcion": null, "imagen": null, "precio": 1.5},
+        { "id_producto":2,"tipo": "bebida", "nombre": "fanta", "descripcion": null, "imagen": null, "precio": 2.5},
+        { "id_producto":3,"tipo": "burguer", "nombre": "completa", "descripcion": null, "imagen": null, "precio": 4.5},
+        { "id_producto":4,"tipo": "burguer", "nombre": "normal", "descripcion": null, "imagen": null, "precio": 3.5},
+        { "id_producto":5,"tipo": "pizza", "nombre": "barbacoa", "categoria": "mediana","descripcion": null, "imagen": null, "precio": 6.5},
+        { "id_producto":6,"tipo": "pizza", "nombre": "romana", "categoria": "premium","descripcion": null, "imagen": null, "precio": 7},
+        { "id_producto":7,"tipo": "pizza", "nombre": "funghi", "categoria": "premium","descripcion": null, "imagen": null, "precio": 7},
+        { "id_producto":8,"tipo": "pizza", "nombre": "caprichiosa", "categoria": "premium","descripcion": null, "imagen": null, "precio": 7},
+        { "id_producto":9,"tipo": "pizza", "nombre": "serrana", "categoria": "mediana","descripcion": null, "imagen": null, "precio": 6.5}
       ],
 
       "tienda": [
-        {"idtienda": 1, "direccion": "travessera de les corts 45", "codigo_postal": 80150, "localidad": "Barcelona", "provincia": "Barcelona", "empleados":[{"idempleados": 1, "nombre": "Xavi", "apellidos": "Garcia", "nif": "20459632P", "telefono": 669357421, "puesto": "cocinero", "idtienda": 1},{"idempleados": 2, "nombre": "Marta", "apellidos": "Perez", "nif": "35269875S", "telefono": 603254187, "puesto": "reparto"}]},
-        {"idtienda": 2, "direccion": "Gran de gracia 122", "codigo_postal": 80364, "localidad": "Barcelona", "provincia": "Barcelona", "empleados":[{"idempleados": 4, "nombre": "Jonathan", "apellidos": "Fernandez", "nif": "98563219L", "telefono": 648951221, "puesto": "reparto"},{"idempleados": 5, "nombre": "Alfredo", "apellidos": "Flores", "nif": "77588659R", "telefono": 621555483, "puesto": "cocinero"}]},
-        {"idtienda": 3, "direccion": "Hort de la figuera 11", "codigo_postal": 8521, "localidad": "Sant Vicenç dels Horts", "provincia": "Barcelona", "empleados":[{"idempleados": 6, "nombre": "Laia", "apellidos": "Soldevilla", "nif": "19325488D", "telefono": 684599977, "puesto": "cocinero"},{"idempleados": 7, "nombre": "Sara", "apellidos": "Martinez", "nif": "22548963S", "telefono": 686886362, "puesto": "reparto"}]},
-        {"idtienda": 4, "direccion": "Pot petit 2", "codigo_postal": 7459, "localidad": "Agramunt", "provincia": "LLeida", "empleados":[ {"idempleados": 8, "nombre": "Mayka", "apellidos": "Gonzalez", "nif": "34256981T", "telefono": 663322144, "puesto": "reparto"},{"idempleados": 9, "nombre": "Luis", "apellidos": "Tosar", "nif": "14869741H", "telefono": 609654987, "puesto": "cocinero"}]},
-        {"idtienda": 5, "direccion": "Dels angels 5", "codigo_postal": 8004, "localidad": "Barcelona", "provincia": "Barcelona","empleados":[{"idempleados": 3, "nombre": "Manolo", "apellidos": "Tapias", "nif": "20159357P", "telefono": 669587412, "puesto": "cocinero"},{"idempleados": 10, "nombre": "Jeniffer", "apellidos": "Aniston", "nif": "33266599X", "telefono": 693287412, "puesto": "reparto"}]}
-      ]
+        {"idtienda": 1, "direccion": "travessera de les corts 45", "codigo_postal": 80150, "localidad": "Barcelona", "provincia": "Barcelona", "empleados":[{"id_empleado":1},{"id_empleado":2}]},
+        {"idtienda": 2, "direccion": "Gran de gracia 122", "codigo_postal": 80364, "localidad": "Barcelona", "provincia": "Barcelona", "empleados":[{"id_empleado":4},{"id_empleado":5}]},
+        {"idtienda": 3, "direccion": "Hort de la figuera 11", "codigo_postal": 8521, "localidad": "Sant Vicenç dels Horts", "provincia": "Barcelona", "empleados":[{"id_empleado":6},{"id_empleado":7}]},
+        {"idtienda": 4, "direccion": "Pot petit 2", "codigo_postal": 7459, "localidad": "Agramunt", "provincia": "LLeida", "empleados":[{"id_empleado":8},{"id_empleado":9}]},
+        {"idtienda": 5, "direccion": "Dels angels 5", "codigo_postal": 8004, "localidad": "Barcelona", "provincia": "Barcelona","empleados":[{"id_empleado":3},{"id_empleado":10}]}
+      ],
+
+      "empleados":[
+        {"id_empleado": 1, "nombre": "Xavi", "apellidos": "Garcia", "nif": "20459632P", "telefono": 669357421, "puesto": "cocinero"},
+        {"id_empleado": 2, "nombre": "Marta", "apellidos": "Perez", "nif": "35269875S", "telefono": 603254187, "puesto": "reparto"},
+        {"id_empleado": 3, "nombre": "Manolo", "apellidos": "Tapias", "nif": "20159357P", "telefono": 669587412, "puesto": "cocinero"},
+        {"id_empleado": 4, "nombre": "Jonathan", "apellidos": "Fernandez", "nif": "98563219L", "telefono": 648951221, "puesto": "reparto"},
+        {"id_empleado": 5, "nombre": "Alfredo", "apellidos": "Flores", "nif": "77588659R", "telefono": 621555483, "puesto": "cocinero"},
+        {"id_empleado": 6, "nombre": "Laia", "apellidos": "Soldevilla", "nif": "19325488D", "telefono": 684599977, "puesto": "cocinero"},
+        {"id_empleado": 7, "nombre": "Sara", "apellidos": "Martinez", "nif": "22548963S", "telefono": 686886362, "puesto": "reparto"},
+        {"id_empleado": 8, "nombre": "Mayka", "apellidos": "Gonzalez", "nif": "34256981T", "telefono": 663322144, "puesto": "reparto"},
+        {"id_empleado": 9, "nombre": "Luis", "apellidos": "Tosar", "nif": "14869741H", "telefono": 609654987, "puesto": "cocinero"},
+        {"id_empleado": 10, "nombre": "Jeniffer", "apellidos": "Aniston", "nif": "33266599X", "telefono": 693287412, "puesto": "reparto"}
+       ]
     }
   }
   
